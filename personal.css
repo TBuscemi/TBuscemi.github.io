@@ -1,39 +1,52 @@
-
-body{
-    background-color:darkslategray;
+body{background-color: #040b0b;}
+a{
+    color: ivory;
 }
-
-
-p,h1{
-    background-color:rgb(228, 228, 228);
-    color:black;
-    border-width: 10px;
-    border-style: solid;
-    border-color:rgba(0, 0, 0, 0.328);
-    margin: 1%;
-}
-.topdiv{
+.heropic{
+    background-image: url("hero.jpg");
     width: 100%;
-    height: 100%;
-    border-collapse: collapse;
+    height: 500px;
+    background-color: black;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    background-size: cover;
+}
+.herotext{
+    width: 100%;
+    text-align: center;
+    position: relative;
+    top: 50%;
+    right: 20%;
+    color: ivory;
+    
 }
 .leftdiv{
-    width: 33%;
+    width: 30%;
     height: 100%;
     float: left;
-    border-collapse: collapse;
-    margin-bottom: 0px;
+    text-align: center;
+    margin-right: 5%;
+    border: 0px;
+    border-style: solid;
+    background: border-box;
+    background-color:#040b0b;
+    color: white;
 }
 .middiv{
-    width: 34%;
+    width: 30%;
     height: 100%;
     float: left;
-    border-collapse: collapse;
+    text-align: center;
+    background-color:#040b0b;
+    color: ivory;
 }
 .rightdiv{
-    width: 33%;
+    width: 30%;
     height: 100%;
     position: relative;
     float: right;
-    border-collapse: collapse; 
+    text-align: center; 
+    background-color: #040b0b;
+    color: ivory;
 }
