@@ -1,7 +1,9 @@
 body{background-color: #040b0b;}
+
 a{
     color: ivory;
 }
+
 .heropic{
     background-image: url("hero.jpg");
     width: 100%;
@@ -12,6 +14,7 @@ a{
     position: relative;
     background-size: cover;
 }
+
 .herotext{
     width: 100%;
     text-align: center;
@@ -19,34 +22,60 @@ a{
     top: 50%;
     right: 20%;
     color: ivory;
+    font-size: 25px;
     
 }
-.leftdiv{
-    width: 30%;
+
+.navbar {
+    background-color: rgb(253, 1, 1);
+    overflow: hidden;
+}
+  
+.navbar a {
+    float: left;
+    color: #f2f2f2;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 20px;
+}
+  
+.navbar a:hover {
+    background-color: #ddd;
+    color: black;
+}
+  
+.navbar a.active {
+    background-color: #000000;
+    color: rgb(64, 141, 230);
+}
+
+.aboutme{
+    width: 50%;
     height: 100%;
     float: left;
     text-align: center;
-    margin-right: 5%;
     border: 0px;
     border-style: solid;
     background: border-box;
     background-color:#040b0b;
     color: white;
 }
-.middiv{
-    width: 30%;
+
+.project{
+    width: 50%;
     height: 100%;
-    float: left;
     text-align: center;
     background-color:#040b0b;
     color: ivory;
 }
-.rightdiv{
-    width: 30%;
+
+.contact{
+    width: 50%;
     height: 100%;
     position: relative;
     float: right;
     text-align: center; 
     background-color: #040b0b;
     color: ivory;
+    box-sizing: border-box;
 }
