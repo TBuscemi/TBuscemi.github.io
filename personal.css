@@ -37,6 +37,7 @@ a{
     padding: 14px 16px;
     text-decoration: none;
     font-size: 20px;
+    
 }
   
 .navbar a:hover {
@@ -59,14 +60,22 @@ a{
     background: border-box;
     background-color:#040b0b;
     color: white;
+    font-size: 20px;
+    margin-bottom: 100px;
+    margin-top: 100px;
+    
 }
 
 .project{
-    width: 50%;
+    width: 100%;
     height: 100%;
     text-align: center;
     background-color:#040b0b;
     color: ivory;
+    font-size: 20px;
+    margin-bottom: 50px;        
+    float: right;
+
 }
 
 .contact{
@@ -78,4 +87,14 @@ a{
     background-color: #040b0b;
     color: ivory;
     box-sizing: border-box;
+    font-size: 20px;
+    margin-top: 100px;
 }
+.footer {
+    text-align: center;
+    padding: 3px;
+    background-color: rgb(253, 1, 1);
+    color: white;
+    float: left;
+    width: 100%;
+  }
