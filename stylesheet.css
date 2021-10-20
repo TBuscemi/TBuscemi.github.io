@@ -32,7 +32,6 @@ a{
 }
   
 .navbar a {
-    float: left;
     color: #f2f2f2;
     padding: 14px 16px;
     text-decoration: none;
@@ -44,12 +43,6 @@ a{
     color: black;
 }
   
-.navbar a.active {
-    background-color: #000000;
-    color: rgb(64, 141, 230);
-}
-
-
 
 .project{
     width: 50%;
