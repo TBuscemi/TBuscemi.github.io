@@ -120,9 +120,10 @@ a{
     box-sizing: border-box;
     font-size: 20px;
     margin-right: 20%;
+    margin-top: 2%;
     padding-top: 4%;
     padding-bottom: 3%;
-    animation: test 5s infinite;
+    animation: test 5s ;
     border-radius: 35%;
     z-index: 2;
 }
@@ -140,6 +141,34 @@ a{
     100% { transform: perspective(800px) rotateY(360deg); } */  
 }
 
+@keyframes emailTest {
+    0%   {left:0px; top:0px;}
+    25%  {left:200px; top:300px;}
+    50%  {left:200px; top:0px;}
+    75%  {left:200px;top:200px;}
+    100% {left:0px; top:0px;}
+
+}
+
+#email{
+    animation: emailTest 8s  reverse;
+    position: relative;
+
+}
+@keyframes githubTest {
+    0%   {left:0px; top:0px;}
+    25%  {left:200px; top:300px;}
+    50%  {left:200px; top:0px;}
+    75%  {left:200px;top:200px;}
+    100% {left:0px; top:0px;}
+
+}
+
+#github{
+    animation: githubTest 8s ;
+    position: relative;
+
+}
 @keyframes linkedinTest {
     0%   {left:0px; top:0px;}
     25%  {left:200px; top:300px;}
@@ -150,7 +179,7 @@ a{
 }
 
 #linkedin{
-    animation: linkedinTest 5s infinite reverse;
+    animation: linkedinTest 5s alternate-reverse;
     position: relative;
 
 }
