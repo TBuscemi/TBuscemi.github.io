@@ -196,8 +196,8 @@ a{
     background-color:#040b0b;
     color: white;
     font-size: 20px; 
-    margin-top: 30%;
     margin-left: 38%;
+    z-index: -2;
 }
 
 .footer {
@@ -209,25 +209,54 @@ a{
     width: 100%;
   }
 
-.container{
+.container-2{
     height: 100vh;
     width: 100vw;
     display: flex;
     justify-content: center;
     align-items: center;
+    perspective: 1000px;
+    -webkit-perspective: 1000px;
+    animation: dice;
 }
 
 .d6{
-    border: 2px solid white;
+    
     height: 250px;      
     width: 250px;
     position: relative;
+    animation: dice 15s infinite;
+    transform-style: preserve-3d;
 }
 
 .Side{
     background-color: white;
     height: 250px;
     width: 250px;
-    border:7px solid rgb(255, 0, 0) ;
+    border:7px solid rgb(250, 0, 0) ;
     box-sizing: border-box;
+    position: absolute;
+}
+
+.one {
+    transform: translateZ( 125px);
+}
+
+.six{
+    transform: translateZ( -125px) rotateY(180deg);
+}
+
+.two{
+    transform: rotateY(270deg) translateX(-125px);
+    transform-origin:  top left;
+
+}
+.five{
+    transform: rotateY(-270deg) translateX(125px);
+    transform-origin: top right;
+}
+
+@keyframes dice{
+     0% { transform: perspective(800px) rotateY(0deg); }
+    100% { transform: perspective(800px) rotateY(360deg); }  
 }
