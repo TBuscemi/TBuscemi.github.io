@@ -217,7 +217,7 @@ a{
     align-items: center;
     perspective: 1000px;
     -webkit-perspective: 1000px;
-    animation: dice;
+
 }
 
 .d6{
@@ -225,7 +225,7 @@ a{
     height: 250px;      
     width: 250px;
     position: relative;
-    animation: dice 15s infinite;
+    animation: dice 5s linear infinite;
     transform-style: preserve-3d;
 }
 
@@ -256,7 +256,22 @@ a{
     transform-origin: top right;
 }
 
+.three{
+    transform: rotateX(90deg)translateY(-125px);
+    transform-origin: top;
+}
+
+.four{
+    transform: rotateX(-90deg) translateY(125px);
+    transform-origin: bottom;
+}
+
 @keyframes dice{
-     0% { transform: perspective(800px) rotateY(0deg); }
-    100% { transform: perspective(800px) rotateY(360deg); }  
+    0%   {left:0px; top:0px;}
+    25%  {left:700px; top:300px;}
+    50%  {left:200px; top: -300px;;}
+    75%  {left:-700px;top:200px;}
+    100% {left:0px; top:0px;}
+    0% { transform: rotateY(0deg) rotateX(0deg) rotateZ(0deg); }
+    100% { transform: rotateY(360deg) rotateX(360deg)  rotateZ(360deg); } 
 }
