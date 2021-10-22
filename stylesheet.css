@@ -7,7 +7,7 @@ a{
 .heropic{
     background-image: url("hero.jpg");
     width: 100%;
-    height: 500px;
+    height: 300px;
     background-color: black;
     background-position: center;
     background-repeat: no-repeat;
@@ -74,7 +74,7 @@ a{
   
 
 .navbar {
-    background-color: rgb(253, 1, 1);
+    background-color: rgba(27, 158, 158, 0.945);
     overflow: hidden;
 }
   
@@ -97,13 +97,14 @@ a{
     float: right;
     position: relative;
     text-align: center; 
-    background-color: #040b0b;
+    background-color: #474747;
     color: ivory;
     box-sizing: border-box;
     font-size: 20px;
     margin-right: 20%;
     padding-top: 2%;
-    animation: test 5s infinite reverse;
+    margin-top: 2%;
+    /* animation: test 5s infinite reverse; */
     border-radius: 20%;
     z-index: 2;
 }
@@ -123,12 +124,12 @@ a{
     margin-top: 2%;
     padding-top: 4%;
     padding-bottom: 3%;
-    animation: test 5s ;
+    animation: test 6s ;
     border-radius: 35%;
     z-index: 2;
 }
 @keyframes test {
-    0%   {left:0px; top:0px;}
+    0%   {left:100px; top:100px; opacity: 0;}
     25%  {left:200px; top:300px;}
     50%  {left:200px; top:0px;}
     75%  {left:0px; top:200px;}
@@ -151,7 +152,7 @@ a{
 }
 
 #email{
-    animation: emailTest 8s  reverse;
+    animation: emailTest 9.5s  reverse;
     position: relative;
 
 }
@@ -165,7 +166,7 @@ a{
 }
 
 #github{
-    animation: githubTest 8s ;
+    animation: githubTest 9s ;
     position: relative;
 
 }
@@ -179,7 +180,7 @@ a{
 }
 
 #linkedin{
-    animation: linkedinTest 5s alternate-reverse;
+    animation: linkedinTest 7s alternate-reverse;
     position: relative;
 
 }
@@ -207,3 +208,26 @@ a{
     float: left;
     width: 100%;
   }
+
+.container{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.d6{
+    border: 2px solid white;
+    height: 250px;      
+    width: 250px;
+    position: relative;
+}
+
+.Side{
+    background-color: white;
+    height: 250px;
+    width: 250px;
+    border:7px solid rgb(255, 0, 0) ;
+    box-sizing: border-box;
+}
