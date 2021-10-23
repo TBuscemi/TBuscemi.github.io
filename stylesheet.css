@@ -128,8 +128,8 @@ a{
 }
 
 .container img{ 
-    max-height: 35vh;
-    max-width: 20vw;
+    max-height: 40vh;
+    max-width: 10vw;
 
     min-width:  25vw;
     min-height: 10vh;
