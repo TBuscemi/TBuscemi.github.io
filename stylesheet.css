@@ -115,7 +115,6 @@ a{
     float: right;
     position: relative;
     text-align: center; 
-    background-color: #474747;
     color: ivory;
     box-sizing: border-box;
     font-size: 20px;
@@ -126,6 +125,15 @@ a{
     animation: test 6s ;
     border-radius: 35%;
     z-index: 2;
+}
+
+.container img{ 
+    max-height: 30vh;
+    max-width: 20vw;
+
+    min-width:  20vw;
+    min-height: 10vh;
+    margin-bottom: 10%;
 }
 
 
@@ -186,6 +194,7 @@ a{
 #linkedin{
     animation: linkedinTest 7s alternate-reverse;
     position: relative;
+    margin-left: 30%;
 
 }
     
@@ -233,7 +242,7 @@ a{
     height: 50vh;      
     width: 50vh;
     position: relative;
-    animation: dice 6s linear infinite;
+    /* animation: dice 6s linear infinite; */
     transform-style: preserve-3d;
 }
 
