@@ -428,7 +428,7 @@ a{
     height: 280px;
     width: 240px;
     background: white;
-    position: relative;
+    /* position: relative; */
     position: absolute;
 }
 
