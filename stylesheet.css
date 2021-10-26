@@ -415,13 +415,13 @@ a{
     cursor:pointer;
 }
 
-.cover{
+.cover-front, .cover-back{
     height:300px;
     width:250px;
     background: purple;
     border-radius: 2px 20px 20px 2px;
     position: absolute;
-    
+    transform-origin: center left;    
 }
   
 .page{
@@ -430,5 +430,12 @@ a{
     background: white;
     position: relative;
     position: absolute;
+}
 
+.cover-front:hover{
+    transform: rotateX(10deg) rotateY(180deg);
+}
+.cover-front{
+    z-index: 1;
+    transition: all 3s;
 }
