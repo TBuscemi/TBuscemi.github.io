@@ -413,6 +413,17 @@ a{
     display: flex;
     align-items: center;
     cursor:pointer;
+    perspective: 1000px;
+}
+
+
+.cover-back{
+    z-index: -2;
+}
+
+.cover-front{
+    z-index: 1;
+    transition: all 3s;
 }
 
 .cover-front, .cover-back{
@@ -422,6 +433,7 @@ a{
     border-radius: 2px 20px 20px 2px;
     position: absolute;
     transform-origin: center left;    
+
 }
   
 .page{
@@ -430,12 +442,63 @@ a{
     background: white;
     /* position: relative; */
     position: absolute;
+    transform-origin: center left;
+    z-index: -1;
 }
 
-.cover-front:hover{
-    transform: rotateX(10deg) rotateY(180deg);
+.showing-page{
+    height: 280px;
+    width: 240px;
+    background: white;
+    position: relative;
+    transform-origin: center left;
+    z-index: -1;
 }
+
+.book:hover .cover-front{
+    transform: rotateX(10deg) rotateY(-180deg);
+    z-index: -2;
+}
+.book:hover .page{
+    transform: rotateX(10deg) rotateY(-180deg);
+    z-index: 2;
+}
+
 .cover-front{
-    z-index: 1;
+    z-index: index 1;;
     transition: all 3s;
 }
+
+
+.page5{
+    transition-duration: 3s;
+}
+.page4{
+    transition-duration: 2.6s;
+}
+.page3{
+    transition-duration: 2.2s;
+}
+.page2{
+    transition-duration: 1.8s;
+}
+.page1{
+    transition-duration: 1.4s;
+}
+
+.book:hover .page5{
+    transition-duration: 6s;
+}
+.book:hover .page4{
+    transition-duration: 5.6s;
+}
+.book:hover .page3{
+    transition-duration: 5.2s;
+}
+.book:hover .page2{
+    transition-duration: 4.8s;
+}
+.book:hover .page1{
+    transition-duration: 4.4s;
+}
+
