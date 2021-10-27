@@ -456,11 +456,11 @@ a{
 }
 
 .book:hover .cover-front{
-    transform: rotateX(10deg) rotateY(-180deg);
+    transform: rotateY(-180deg);
     z-index: -2;
 }
 .book:hover .page{
-    transform: rotateX(10deg) rotateY(-180deg);
+    transform: rotateY(-180deg);
     z-index: 2;
 }
 
@@ -470,19 +470,19 @@ a{
 }
 
 
-.page5{
+.page1{
     transition-duration: 3s;
 }
-.page4{
+.page2{
     transition-duration: 2.6s;
 }
 .page3{
     transition-duration: 2.2s;
 }
-.page2{
+.page4{
     transition-duration: 1.8s;
 }
-.page1{
+.page5{
     transition-duration: 1.4s;
 }
 
