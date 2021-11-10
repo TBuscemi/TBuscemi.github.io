@@ -502,3 +502,54 @@ a{
     transition-duration: 3.6s;
 }
 
+
+.liquid{
+    position: absolute;
+    background-color: rgb(245, 21, 1);
+    height: 9%;
+    width: 2%;
+    margin-top: 4%;
+}
+
+.lid{
+    position: absolute;
+    background-color: rgb(129, 60, 3);
+    height: 3.5%;
+    width: 1.5%;
+    margin-bottom:4%;
+    margin-left: .5%;
+    margin-top: .5%;
+
+}
+
+.left{
+    position: absolute;
+    background-color: rgb(212, 212, 212);
+    height: 15%;
+    width: .5%;
+    margin-top: 1%;
+}
+
+.right{
+    position: absolute;
+    background-color: rgb(212, 212, 212);
+    height: 15%;
+    width: .5%;
+    margin-left: 2%;
+    margin-top: 1%;
+}
+
+.bottom{
+    position: absolute;
+    background-color: rgb(212, 212, 212);
+    height: .9%;
+    width: 2.5%;
+    margin-top: 8.5%;
+    border-radius: 100%;
+ 
+    
+}
+
+
+
+
