@@ -52,21 +52,18 @@ a{
     100% {
         opacity: 1;
     }
-} */
+}
   
-
-.navbar {
+.navbar-nav{
+    text-align: center;
+    vertical-align: middle;
     margin-bottom: 2%;
-    height: 10vh;
     overflow: hidden;
     width: 100vh;
-    height: 20vh;
-   
-}
-
-.navbar-expand-lg{
+    height: 5vh;
     background-color:#040b0b;
 }
+
   
 .navbar a {
     color: #f2f2f2;
@@ -79,6 +76,7 @@ a{
     background-color: grey;
     color: black;
 }
+
   
 
 .project{
@@ -396,7 +394,7 @@ a{
 .waves::before {
     border-radius: 44%;
     background: rgb(0, 0, 0);
-    animation: waves 9s linear infinite;
+    animation: waves 15s linear infinite;
 }
   
 .waves::after {
