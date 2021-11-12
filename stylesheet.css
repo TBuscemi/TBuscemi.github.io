@@ -56,9 +56,16 @@ a{
   
 
 .navbar {
-    background-color: rgb(11, 91, 156);
     margin-bottom: 2%;
+    height: 10vh;
     overflow: hidden;
+    width: 100vh;
+    height: 20vh;
+   
+}
+
+.navbar-expand-lg{
+    background-color:#040b0b;
 }
   
 .navbar a {
@@ -69,7 +76,7 @@ a{
 }
   
 .navbar a:hover {
-    background-color: #ddd;
+    background-color: grey;
     color: black;
 }
   
@@ -369,8 +376,8 @@ a{
     bottom: 0;
     left: 0;
     right: 0;
-    height: 200px;
-    background-color:red;
+    height: 100vh;
+    background-color:rgba(0, 132, 255, 0.637);
     box-shadow: inset 0 0 50px rgba(0, 0, 0, 0.5);
     transition: 500ms;
 }
@@ -380,7 +387,7 @@ a{
     content: '';
     position: absolute;
     width: 300vw;
-    height: 300vw;
+    height: 400vw;
     top: -65vw;
     left: 50%;
     transform: translate(-50%, -75%);
@@ -414,6 +421,7 @@ a{
     align-items: center;
     cursor:pointer;
     perspective: 1000px;
+    font-size: 1.7vh;
 }
 
 
@@ -427,8 +435,8 @@ a{
 }
 
 .cover-front, .cover-back{
-    height:300px;
-    width:250px;
+    height:32vh;
+    width:28vh;
     background: purple;
     border-radius: 2px 20px 20px 2px;
     position: absolute;
@@ -437,8 +445,8 @@ a{
 }
   
 .page{
-    height: 280px;
-    width: 240px;
+    height: 28vh;
+    width: 25vh;
     background: white;
     /* position: relative; */
     position: absolute;
@@ -447,12 +455,13 @@ a{
 }
 
 .showing-page{
-    height: 280px;
-    width: 240px;
+    height: 28vh;
+    width: 25vh;
     background: white;
     position: relative;
     transform-origin: center left;
     z-index: -1;
+
 }
 
 .book:hover .cover-front{
